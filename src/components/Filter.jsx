@@ -42,7 +42,7 @@ const Filter = ({data,}) => {
      <select  className='select' id="topic" name="topic" onChange={handleFilterChange}>
      {topicArray.map((topic, index) => (
         
-        <option className='p-1.5 flex flex-col gap-2 h-auto divide-y divide-zinc-100 rounded-2xl ring-1 ring-opacity-5 dark:divide-zinc-900 dark:bg-zinc-800 dark:ring-zinc-950 dark:ring-opacity-75 z-10' key={index} value={topic}>
+        <option  key={index} value={topic}>
             {topic}
         </option>
     ))}
@@ -56,7 +56,7 @@ const Filter = ({data,}) => {
      <select  className='select'  id="sector" name="sector" onChange={handleFilterChange}>
      {sectorArray.map((sector, index) => (
         
-        <option className='z-10' key={index} value={sector}>
+        <option  key={index} value={sector}>
             {sector}
         </option>
     ))}
@@ -72,7 +72,7 @@ const Filter = ({data,}) => {
       id="country" name="country" onChange={handleFilterChange}>
      {countryArray.map((country, index) => (
         
-        <option className='z-10' key={index} value={country}>
+        <option key={index} value={country}>
             {country}
         </option>
     ))}
@@ -86,7 +86,7 @@ const Filter = ({data,}) => {
      <select  className='select'  id="year" name="end_year" onChange={handleFilterChange}>
      {endYearArray.map((end_year, index) => (
         
-        <option className='z-10' key={index} value={end_year}>
+        <option  key={index} value={end_year}>
             {end_year}
         </option>
     ))}
@@ -98,7 +98,7 @@ const Filter = ({data,}) => {
    <label className='label' id='region'>Region:</label>
      <select  className='select '  id="region" name="region" onChange={handleFilterChange}>
      {regionArray.map((region, index) => (
-        <option className='z-10' key={index} value={region}>
+        <option  key={index} value={region}>
             {region}
         </option>
     ))}
@@ -111,7 +111,7 @@ const Filter = ({data,}) => {
      <select  className='select' id="PEST" name="pestle" onChange={handleFilterChange}>
      {pestleArray.map((PEST, index) => (
         
-        <option className='z-10 bg-transparent' key={index} value={PEST}>
+        <option key={index} value={PEST}>
             {PEST}
         </option>
     ))}
@@ -129,7 +129,7 @@ const Filter = ({data,}) => {
      <select   className='select' id="source" name="source" onChange={handleFilterChange}>
      {sourceArray.map((source, index) => (
         
-        <option className='z-10' key={index} value={source}>
+        <option  key={index} value={source}>
             {source}
         </option>
     ))}
